@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.options{
+    text-align: center;
+    width: 100%;
+  
+}
+
+label{
+    background-color: #375eca;
+    
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.sliderContainer{
+    
+    border-radius: 3px;
+    object-fit: cover;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.sliderContainer span{
+    z-index: 1;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.172);
+    cursor: pointer;
+    transition:background-color 120ms linear,font-size 120ms linear,padding 120ms linear;
+}
+
+.sliderContainer span:hover{
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.sliderContainer span:nth-child(2){
+    right: 0;
+}
+
+.sliderImgs{
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 200ms linear;
+}
+
+.sliderImgs img{
+   width: 100% !important;
+    height: inherit;
+}
+

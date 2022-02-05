@@ -30,11 +30,11 @@ function Init(): void {
     "sliderContainer"
   )[0] as HTMLDivElement;
 
-  sliderContainer.ondblclick = () => {
+/*   sliderContainer.ondblclick = () => {
     sliderContainer.requestFullscreen().catch((err) => {
       console.log(err);
     });
-  };
+  }; */
 
   let counter: number = 0;
   const sliderImages = document.getElementsByClassName(

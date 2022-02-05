@@ -21,11 +21,11 @@ document.body.onload = () => {
 };
 function Init() {
     const sliderContainer = document.getElementsByClassName("sliderContainer")[0];
-    sliderContainer.ondblclick = () => {
+    /*   sliderContainer.ondblclick = () => {
         sliderContainer.requestFullscreen().catch((err) => {
-            console.log(err);
+          console.log(err);
         });
-    };
+      }; */
     let counter = 0;
     const sliderImages = document.getElementsByClassName("sliderImgs")[0];
     if (arrImgs.length > 0) {

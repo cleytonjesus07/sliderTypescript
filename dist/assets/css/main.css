@@ -22,7 +22,7 @@ input[type="file"]{
 
 label{
     background-color: #375eca;
-    
+    cursor:pointer;
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
